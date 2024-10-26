@@ -1,0 +1,117 @@
+.contact-form-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: #101012;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    max-height: 480px;
+    padding: 100px;
+    border: 1px solid #707070;
+}
+
+.contact-form-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.form div img {
+    margin: 25px 0;
+}
+
+.contact-form-paragraph {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: 'Crimson Text', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+.form-group {
+    display: block;
+}
+
+.form-group:nth-child(2) {
+    margin-top: 25px;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    float: left;
+    text-transform: uppercase;
+}
+
+.form-group input, textarea {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: #101012;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #707070;
+    transition: border-bottom .1s linear;
+    color: #fff;
+}
+
+.form-group input:focus, textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #ffffff;
+    transition: border-bottom .1s linear;
+}
+
+.contact-form-block .form:nth-child(2) {
+    form {
+        width: 450px;
+    }
+}
+
+.send-btn {
+    margin-top: 50px;
+    text-decoration: none;
+    float: right;
+    border: none;
+    background: none;
+    color: #00c7fc;
+    text-transform: uppercase;
+    transition: color .3s linear;
+}
+
+.send-btn:hover {
+    color: #8a8a8a;
+    transition: color .3s linear;
+}
+
+@media (max-width: 650px) {
+    .form {
+        padding: 50px;
+        margin: 25px 5%;
+    }
+
+    .contact-form-block .form:nth-child(2) {
+        form {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+
+    .send-btn {
+        margin-top: 25px;
+    }
+}

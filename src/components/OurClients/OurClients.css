@@ -1,0 +1,55 @@
+.our-clients {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 150px auto;
+}
+
+.paragraph {
+    font-size: 1em;
+    font-family: 'Crimson Text', sans-serif;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.italic-paragraph {
+    font-style: italic;
+    font-size: 1em;
+    font-family: 'Crimson Text', sans-serif;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #999999;
+}
+
+.clients-logos {
+    display: flex;
+    margin-top: 120px;
+    gap: 175px;
+}
+
+@media (max-width: 1145px) {
+    .clients-logos {
+        justify-content: center;
+        gap: 10%;
+    }
+}
+
+@media (max-width: 800px) {
+    .our-clients {
+        margin: 100px 50px;
+    }
+    .clients-logos {
+        gap: 5%;
+    }
+}
+
+@media (max-width: 600px) {
+    .clients-logos {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        margin: 15px auto;
+    }
+}
